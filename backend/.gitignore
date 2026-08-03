@@ -1,0 +1,33 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# --- Virtual Environment ---
+.venv/
+.venv-1/
+venv/
+env/
+
+# --- Database ---
+*.db
+
+# --- Environment ---
+.env
+.env.*
+!.env.example
+
+# --- Uploads ---
+uploads/
+
+# --- Testing ---
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+*.log
+.mypy_cache/

@@ -1,0 +1,54 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# --- Virtual Environment ---
+.venv/
+venv/
+env/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb
+
+# --- Dataset ---
+archive/
+data/
+dataset/
+
+# --- Training Model Weights (large, not needed at runtime) ---
+models/best_model/
+models/final_model/
+models/checkpoints/
+models/experiments/
+*.h5
+
+# --- Production model is kept (inference/model/best_model.keras) ---
+# Do NOT ignore inference/model/ — it's required to run the app
+
+# --- Training Artifacts ---
+logs/
+outputs/
+notebooks/
+scripts/
+
+# --- AI Engine Testing ---
+inference/outputs/
+inference/sample_images/
+
+# --- IDE ---
+.vscode/
+.idea/
+
+# --- Environment ---
+.env
+.env.*
+
+# --- OS ---
+Thumbs.db
+.DS_Store
+
+# --- Git (nested) ---
+.git/
