@@ -1,0 +1,14 @@
+# Ignore local development artifacts and large folders
+/node_modules
+/.next
+/.vercel
+/out
+/build
+/.git
+/.github
+/.vscode
+.claude/
+*.log
+.env*
+.DS_Store
+Thumbs.db
