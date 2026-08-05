@@ -28,7 +28,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
-        "https://crossword-headed-jennifer-challenged.trycloudflare.com",
+        "https://oral-cancer-nine.vercel.app",
     ],
     allow_credentials=True,
     allow_methods=["*"],
