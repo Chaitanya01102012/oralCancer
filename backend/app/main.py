@@ -8,7 +8,7 @@ from app.api import auth, dashboard, diagnostics, health, profile, reports
 from app.config.settings import settings
 from app.database.base import Base
 from app.database.session import engine
-from app.models import diagnostic, refresh_token, report, user  # noqa: F401
+from app.models import diagnostic, password_reset_otp, refresh_token, report, user  # noqa: F401
 
 app = FastAPI(title="Oral Cancer Classification System")
 
@@ -28,6 +28,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",
+        "http://127.0.0.1:3000",
         "https://oralcancer-frontend.vercel.app",
     ],
     allow_credentials=True,
