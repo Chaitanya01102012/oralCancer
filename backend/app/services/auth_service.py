@@ -76,9 +76,13 @@ class AuthService:
         try:
             send_otp_email(email, otp_code)
         except Exception as exc:
+            print(
+                f"PASSWORD RESET EMAIL ERROR: {type(exc).__name__}: {exc}",
+                flush=True,
+            )
             raise HTTPException(
-                status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
-                detail="Unable to send reset email. Please try again later.",
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="Unable to send reset email. Please try again later.",
             ) from exc
 
     def verify_otp(self, email: str, otp_code: str) -> None:
